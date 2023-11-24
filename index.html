@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <i class="material-icons">menu</i>
+            <img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc"
+                alt="youtube_image">
+        </div>
+
+        <div class="header_search">
+            <form action="">
+                <input type="text" placeholder="Search">
+                <button><i class="material-icons">search</i></button>
+            </form>
+        </div>
+
+        <div class="header_icons">
+            <i class="material-icons">search</i>
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons">account_circle</i>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="sidebar_categories">
+                <div class="sidebar_category">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Trending</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Subscriptions</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="sidebar_categories">
+                <div class="sidebar_category">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="videos">
+            <h1>Recommened</h1>
+            <div class="videos_conatiner">
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkH_5JIeBHGfoIeCNgNxLjhgNohyFgE7s1AQ&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                A journey to the peace
+                            </h3>
+                            <a href="">Yash Khurana Vlogs</a>
+                            <span>1M Views * 1 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTugXVeCu7zjuli9vubA22u_q3Viff4_v0DsA&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="data:image/jpeg;base64,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w+tJZNE29owTdzQBxabvZ03mjin4j8Ox2My4VV1GFVhAikk3HH3Yp7DclB4Me3dv0LDlYrrm2J+v1A5GP+0xd37WsHbMxmIw2cWMa2UtzElO7Nsg523tfhd0XmU8zpHb7yXOIY0uOpDWhoueJs0ZrXHvtK+aIotohUVUUEKiFQoqFRUqIoiIgIiIKFVlaCDQVWVQiNKrKqqNNWr2ILSQQQQWkgtINwQeBWEQek7JdpDYwIMRYXN09IjaHXFv3sfHzbr8PFdQrpGUNeZcOnZJHFIJqSVpLgI3C4ieDmCASxzXWJAPxLhkWcXXu9HjEddTMqoshILPZe5ikHtRnyPHiCDxXmO3GDiKU1MYtHM71gHuSn3ugd/W/MLr9HiE8N+5mliDjdwje9gceZANivtPjNVI0sknke1ws4OO8CPmpOOVdem7F7Uemw9xO69XA3xE6zxjIS+egd1seNhyFYvGKaofE9ssTnMkYbte02c02Iy+RI+a5B20lcdamU/y/wCyl4GuYE78GxCOrhBMD7h0Y0dC4jvIPMWDm9Q3kV6DtPTw11MQHB0U7GyRSDhcbzJB+OnUheOVWJzzN3JZXPbcGzrajj+a+tNjtXFGIY6iRkTb7rARutuSTa45kn5q3jTXdNjMWcYpMKqR6ylDxGHZh0N7Piz1DSbjm13Jq6Li1M2GolhYbsjfutOpAsDunqCS35LElbK6TvjI/vf+YDuv9nd1FuBt5L85KsmJooii0gj1FFFFkqrKKIiICIiAiIgKhREGgqshVEauqsqgoNJdRERpFEVGrqkWQZZqOddARS6l0FRS6IF0URQFEURRRFCUAqIiKKlq0BbM/gsuddBEREBERAREQFVEQaVWFboNK3WVURVsCwv+tV81boNFyil0ugqKXS6CqKXRBbqIogqil1EVSVERAW2jj/7AWEQac6/43WURAREQEREFsotb2SygIiICIiArdREGkWUQaRS6XQVFLpdBpRA7Kyygt0URAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH/9k="
+                                alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Best Cinematic Fonts
+                            </h3>
+                            <a href="">
+                                Tomorrows Filmmakers</a>
+                            <span>878k Views * 5 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/2I0NG7erjrs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_ICQoHTAP&rs=AOn4CLCZi90_hZf47fFTAaapEJYYIlL53Q" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/0HGOv40hKBk5I6CDOxq-RmTKcHZWkJa4GbcKy3r-5pjKBV5BWSkioR0ROTzqMZLMvmdmH8iy6Q=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Full Album Spider-Man: Across the Spider-Verse.Metro Boomin New Album 2023 
+                            </h3>
+                            <a href="">Hobie Brown
+                            </a>
+                            <span>813k Views * 4 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/ZYzbalQ6Lg8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxv7hJCm7ffdDCLUY96cMwbThusw" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/ugAmG9LeliJJoiyacIecdiq_ZgRNdmjCIohaN5x3QEOmWB9dNUsKuCU8ngLs3JUauHZ4-boVkA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                SPIDER-MAN: NO WAY HOME - Official Trailer
+                            </h3>
+                            <a href="">Marvel Entertainment</a>
+                            <span>41M Views * 2 years ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/an_webp/PZ7lDrwYdZc/mqdefault_6s.webp?du=3000&sqp=CIKWgqsG&rs=AOn4CLALGNFhewbsZ5h-KDe2a3AEjOgnhw" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/lAj6wzPQ-FkVKsmzCw9yV5iT3skKVh5l3AUPmJblHiTUDr4wvlUdWXPu84Fy4o3709Cz2ZRK4w=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Top % programming languages to learn in 2021 | Best Programminglanguage to learn
+                            </h3>
+                            <a href="">Escaping Ordinary (B.C Marx) 
+                            </a>
+                            <span>15M Views * 2 yearss ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/an_webp/_5ecgEXLoCA/mqdefault_6s.webp?du=3000&sqp=COD5gasG&rs=AOn4CLC4yItQlZRi_xLzZwXMCgum2uqM0Q" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/lAj6wzPQ-FkVKsmzCw9yV5iT3skKVh5l3AUPmJblHiTUDr4wvlUdWXPu84Fy4o3709Cz2ZRK4w=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                The Psychology of Money in 20 minutes
+                            </h3>
+                            <a href="">
+                                Escaping Ordinary (B.C Marx) 
+                                </a>
+                            <span>950k Views * 2 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/_S_zO87qhyE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLANZQQQRruiHVYT6DjwLuWCK9oKag" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/ytc/APkrFKaeOBRJocyZl4n4b7tzOgYTJrrzq--fbVberimekQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Surviving Siachen | Extreme Flight: Indian Air Force | Full Episode | S01-E01 | National Geographic
+                            </h3>
+                            <a href="">
+                                National Geographic India
+                                </a>
+                            <span>810k Views * 2 Weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/2Ul8KSDQA3o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmL4vcLAgpyQ1ZCR4kEiU6q5rI-Q" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/gNF5ynmV0yRtbMNG81K2WNKNSKPSBD776ACyb87cK8hIvyvx2P4xiKVFfoG1in9tAxJLEEWjmQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Transform Your Mindset - Motivational Speech
+                            </h3>
+                            <a href="">
+                                FOR YOU CHUVAK</a>
+                            <span>2k Views * 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/3xdnZS0NHkY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBRjEDMYJhj6ZucmVwqw2NNq5UPfw" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/5wQnSF-6B07vV3el26JwWt7vwvL2MVvb80gwKZNDwsceSehVRJr8_46bdQsuws6iFlYAYd52rQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Day in The Life of a Software Engineer
+                            </h3>
+                            <a href="">Marko
+                            </a>
+                            <span>120k Views * 12 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/lYAk5ebCg3g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8v9wvY2FAWT5KbnO9iJrXPF8N5w" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/EcuxYwcS7BN-LfFDnMfyqclZ3Qjh7wn7b1Hkr53MQeJsWxANYTJ-7QF7hwSyqfMuwU54aIiXrg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                ⚡Make a Professional Website UI Design in Figma - Figma Tutorial (Hindi)
+                            </h3>
+                            <a href="">Nikhil Pawar
+                            </a>
+                            <span>10M Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/glMRU2ER1q8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCfbvVceYNiSF3Tfb9F5XaW3FuC_w" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="Ecommerce Website Development Tutorial With MERN Stack, Razorpay, Redux, MUI & Tailwind | Hindi" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Ecommerce Website Development Tutorial With MERN Stack, Razorpay, Redux, MUI & Tailwind | Hindi
+                            </h3>
+                            <a href="">Code With Zosh</a>
+                            <span>36k Views * 3 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/6UWcazW0khE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAo-PlaYPEmxqhSeOqIMPdO7lT_9Q" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/ytc/APkrFKa3gnpQhE_9k_ppj2061E3XcpESY9CGJU-JUySqag=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                When You Don't Want To Wake Up ! | Mr Bean Full Episodes | Mr Bean Official
+                            </h3>
+                            <a href="">Mr Bean
+                            </a>
+                            <span>9.5M Views * 1 years ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/8pDqJVdNa44/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDNkWReFkOJBoYseLDmr8QD0AiSzw" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/ytc/APkrFKbzz6R0Wmc-FQ81Ya_K6DjM3GAUWCT3JIIpmGxAlw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                How A Small Team of Developers Created React at Facebook | React.js: The Documentary
+                            </h3>
+                            <a href="">Honeypot
+                            </a>
+                            <span>969k Views * 9 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/SmaY7RfBgas/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_s9uqJQ7kDyEZhIBdQmBZg1Nl9A" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/ytc/APkrFKa9SubIzLCutY6TXqyflflJ53CWgn-c_26I08bFJQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Anuv Jain - GUL (Studio)
+                            </h3>
+                            <a href="">Anuv Jain
+                            </a>
+                            <span>37M Views * 2 years ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="video_thumbnail">
+                        <img src="https://i.ytimg.com/vi/Tkp3FDgOueM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDe-a0QXd2JgCqDc5kxdBiwb-EQrw" alt="">
+                    </div>
+                    <div class="video_details">
+                        <div class="author">
+                            <img src="https://yt3.ggpht.com/SZDSSBxcuZPWay3WyQOV1uBnAsRQ4_MlpomNMdnU8BCudpaiyMDFs2VeUqzgson0Uzb1biGMlKg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Build a Complete Responsive Personal Portfolio Website using HTML CSS Javascript
+                            </h3>
+                            <a href="">Codehal
+                            </a>
+                            <span>752k Views * 9 Months ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
